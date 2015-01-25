@@ -1,0 +1,25 @@
+### CodeBook
+
+No other transformations than the ones done in the script has been made on the data. The script merges many the different files,
+into one single dataset as it has been stated in the exercise (see readme for the exercise's description).
+
+The input is described in the README.txt of the downloaded input (see "UCI HAR Dataset/README.txt" file once the input is downloaded).
+
+The output represents the average of each variable for each activity and each subject. It is a table ; each variable is represented by a column, and each activity / subject is represented by a row.
+The columns names are slightly modified from the "features.txt" input file content: all parenthesis are removed.
+The row names merge the subject and the activity. For instance, the row "1_LAYING" describes the means of the subject 1 for the LAYING activity.
+
+  ------------- | -------------  | ------------- | ------------- 
+  subject       | numerical      | 1:30         | Subject id numbers
+  activityName  | factor with 6 levels        | WALKING, WALKING\_UPSTAIRS, WALKING\_DOWNST
+-**Features/Measures** | numeric | Features/Measures are normalized and bounded within [-1,1]. | Mean or standard deviation of the triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration
++**Features/Measures** | **numeric** | **Features/Measures are normalized and bounded within [-1,1].** | **Mean or standard deviation of the triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration**
+ tBodyAcc-mean()-X |
+ tBodyAcc-mean()-Y |
+ tBodyAcc-mean()-Z |
+ @@ -75,4 +75,4 @@ fBodyBodyAccJerkMag-std() |
+ fBodyBodyGyroMag-mean() |
+ fBodyBodyGyroMag-std() |
+ fBodyBodyGyroJerkMag-mean() |
+-fBodyBodyGyroJerkMag-std() |
++fBodyBodyGyroJerkMag-std() |x 
